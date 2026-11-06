@@ -53,6 +53,8 @@ Given the state of a game at any moment, **what is the probability that the home
 
 **What I learned:** the `time_left` weight is close to 0. Time on its own doesn't predict a winner; it only matters **combined with the lead** (a 7-point lead with 1 minute left is huge, with 59 minutes left it isn't). Day 3 fixes this with a lead × time feature.
 
+| 3 | Feature engineering, leakage check, GroupKFold CV, L1/L2 | Log loss 0.496 → 0.454, acc 74.3% → 77.7%. Spread helped most; timeouts/down didn't (L1 zeroed them). Best λ = 0 |
+
 ---
 
 ## Roadmap
