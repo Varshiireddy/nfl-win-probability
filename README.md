@@ -55,6 +55,8 @@ Given the state of a game at any moment, **what is the probability that the home
 
 | 3 | Feature engineering, leakage check, GroupKFold CV, L1/L2 | Log loss 0.496 → 0.454, acc 74.3% → 77.7%. Spread helped most; timeouts/down didn't (L1 zeroed them). Best λ = 0 |
 
+| 4 | Calibration, Brier, ROC-AUC, comparison vs nflverse | ECE ≈ 0.01; Brier 0.150 (skill 0.40); AUC 0.864. Beats nflverse home_wp (0.481 log loss); within 0.006 of vegas_home_wp (0.449) |
+
 ---
 
 ## Roadmap
