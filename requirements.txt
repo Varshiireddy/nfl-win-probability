@@ -7,3 +7,4 @@ pytest
 httpx
 streamlit==1.67.0
 altair
+requests
